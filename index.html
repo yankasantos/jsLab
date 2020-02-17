@@ -19,16 +19,39 @@
                 uf: "SP"
             };
 
+            function informacaoDev(endereco) {
+                console.log("O usuário mora em "+ endereco.cidade + "/"+ endereco.uf+" , no bairro"+ endereco.bairro+", na rua " +  endereco.rua +" com nº "+endereco.numero+".")
+            }
+
             var quantidadeQuestoes = 10;
             var quantidadeErros = 6; 
             var quantidadeAcertos = quantidadeQuestoes - quantidadeErros;
 
-            function informacaoDev(endereco) {
-                console.log("O usuário mora em "+ endereco.cidade + "/"+ endereco.uf+" , no bairro"+ endereco.bairro+", na rua " +  endereco.rua +" com nº "+endereco.numero+".")
-            }
             function notaFinal(){
                 console.log("Nota final " + quantidadeAcertos);
             }
+
+
+            function retornaGenero(genero){
+                if(genero ==='M'){
+                    return 'Masculino';                    
+                } else if(genero === 'F'){
+                    return 'Feminino';
+                } else if(genero === 'MT'){
+                    return 'Mulher Trans';
+                } else if(genero === 'HT'){
+                    return 'Homem Trans';
+                } else if(genero === 'NB'){
+                    return 'Não-binário'
+                } else{
+                    return'Outro';
+                }
+            }
+
+            var generoInformado = retornaGenero('NB');
+            console.log(retornaGenero);
+
+
         </script>
     </body>
 </html>
