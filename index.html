@@ -46,10 +46,29 @@
                 } else{
                     return'Outro';
                 }
-            }
+            }            
 
             var generoInformado = retornaGenero('NB');
             console.log(retornaGenero);
+
+            function identidadeGenero(idGenero){
+                switch(idGenero){
+                    case 'C': 
+                        return 'Cisgênero';
+                    case 'A' :
+                        return 'Agênero';
+                    case 'F' :
+                        return 'Fluido';
+                    case 'T' : 
+                        return 'Transgênero';
+                    case 'N' :
+                        return 'Não-binária';
+                    default :
+                        return 'Outros';
+                }
+            }
+
+            var identidadeGeneroInformado = identidadeGenero('C');
 
 
         </script>
