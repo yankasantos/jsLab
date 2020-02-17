@@ -19,8 +19,15 @@
                 uf: "SP"
             };
 
+            var quantidadeQuestoes = 10;
+            var quantidadeErros = 6; 
+            var quantidadeAcertos = quantidadeQuestoes - quantidadeErros;
+
             function informacaoDev(endereco) {
                 console.log("O usuário mora em "+ endereco.cidade + "/"+ endereco.uf+" , no bairro"+ endereco.bairro+", na rua " +  endereco.rua +" com nº "+endereco.numero+".")
+            }
+            function notaFinal(){
+                console.log("Nota final " + quantidadeAcertos);
             }
         </script>
     </body>
