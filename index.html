@@ -6,18 +6,24 @@
         <title>JS Lab</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script src="developers.js"></script>
-        <script src="modulo1.js.js"></script>
+        <link rel="stylesheet" href="">        
+        <script src="./developers.js"></script>
+        <script src="./modulo1.js"></script>
+        <!-- <script src="./modulo2.js"></script> -->
     </head>
     <body>  
         <div id="app">
-            <input type="text" name="nome" />
-            <button class="botao">Adicionar</button>
+            
         </div>
         <script>
             
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', './to-do/to-do.html');
+            var textElement = document.createTextNode('To Do de hoje dinâmico');
+            linkElement.appendChild(textElement);
 
+            var containerElement=document.querySelector('#app');
+            containerElement.appendChild(linkElement);
 
         </script>
     </body>

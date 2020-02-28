@@ -1,3 +1,11 @@
+/*
+*   No HTML tinha essa div, por isso estavamos manipulando direto no index.html
+*        <div id="app">
+*            <input type="text" name="nome" />
+*            <button class="botao">Adicionar</button>
+*        </div>
+*/
+
 var inputElement =  document.querySelector('input[name=nome');  
 var inputElementAll =  document.querySelectorAll('input');  
 
