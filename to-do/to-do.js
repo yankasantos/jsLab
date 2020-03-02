@@ -2,11 +2,7 @@ var listElement = document.querySelector('#app ul');
 var inputElement =  document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var toDos = [
-    'Almoçar com o time',
-    'Fazer as atividades do inglês',
-    'Assistir filme com Renato'
-];
+var toDos = JSON.parse(localStorage.getItem('list_toDos')) || [];
 
 function renderToDos(){
     listElement.innerHTML = '';
@@ -20,8 +16,8 @@ function renderToDos(){
         linkText = document.createTextNode('Excluir');
         linkElement.appendChild(linkText);
         
-        var pas = toDos.indexOf(toDo);
-        linkElement.setAttribute('onclick', 'deleteToDo(' + pas + ')')
+        var getNodeList = toDos.indexOf(toDo);
+        linkElement.setAttribute('onclick', 'deleteToDo(' + getNodeList + ')')
 
         toDoElement.appendChild(toDoTesxtElement);
         toDoElement.appendChild(linkElement);
@@ -35,11 +31,17 @@ function addToDo(){
     toDos.push(toDoText);
     inputElement.value = '';
     renderToDos();
+    saveToStorage();
 }
 
 buttonElement.onclick = addToDo;
 
-function deleteToDo(pas){
-    toDos.splice(pas,1);
+function deleteToDo(getNodeList){
+    toDos.splice(getNodeList, 1);
     renderToDos();
+    saveToStorage();
+}
+
+function saveToStorage(){
+    localStorage.setItem('list_toDos', JSON.stringify(toDos));
 }
