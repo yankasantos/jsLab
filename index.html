@@ -21,8 +21,15 @@
             var textElement = document.createTextNode('Tarefas de hoje');
             linkElement.appendChild(textElement);
 
+            var autorElement = document.createElement('div');
+            autorElement.setAttribute('href', 'https://www.linkedin.com/in/yanka-santos-324511b1/');
+            autorElement.setAttribute('class', 'footer');
+            var autorName = document.createTextNode('Autora @YankaSantos');
+            autorElement.appendChild(autorName);
+
             var containerElement=document.querySelector('#app');
             containerElement.appendChild(linkElement);
+            containerElement.appendChild(autorElement);
 
         </script>
     </body>

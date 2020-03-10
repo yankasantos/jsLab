@@ -1,11 +1,12 @@
 .button-input{
     background-color: #30FF72;
     margin: 0 auto;
-    width: 30%;
+    width: 10%;
     border: none;
     color: #f0ffff;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     border-radius: 2rem;
+    padding: 0.5rem;
 }
