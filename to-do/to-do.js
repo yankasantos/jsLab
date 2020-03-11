@@ -9,12 +9,11 @@ function renderToDos(){
     for(toDo of toDos){
         var toDoElement = document.createElement('li');
         var toDoTesxtElement = document.createTextNode(toDo);
-        var linkElement = document.createElement('a');
-        
-        
+        var linkElement = document.createElement('img');
+        linkElement.setAttribute('src', '../images/cancelar.svg');
         linkElement.setAttribute('href', '#');
-        linkText = document.createTextNode('Excluir');
-        linkElement.appendChild(linkText);
+        // linkText = document.createTextNode('Excluir');
+        // linkElement.appendChild(linkText);
         
         var getNodeList = toDos.indexOf(toDo);
         linkElement.setAttribute('onclick', 'deleteToDo(' + getNodeList + ')')

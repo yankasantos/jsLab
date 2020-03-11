@@ -1,17 +1,6 @@
-.blue{
-    color: #30A9FF;
-}
-.blue-active{
-    color: #2CCBE8;
-}
-.blue-light{
-    color: #3EFFE9;
-}
-.green-active{
-    color: #2CE89D;
-}
-.green{
-    color: #30FF72;
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .head{
@@ -23,7 +12,7 @@
 }
 
 .button-input{
-    background-color: #30FF72;
+    background-color: #27CC5B;
     margin: 0 auto;
     width: 15%;
     border: none;
@@ -63,4 +52,11 @@
     border-radius: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    color: #30FF72;
+}
+.body-container> ul > li > img {
+    width: 1.5rem;
+    position: relative;
+    display: inline-flex;
+    margin-left: 16px;
 }
