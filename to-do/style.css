@@ -8,7 +8,7 @@ body{
     position: relative;
     width: 70%;
     left: 14rem;
-    top: 6rem;
+    top: 2rem;
 }
 .arrow-previous > a > img{
     width: 2rem;
@@ -43,7 +43,7 @@ body{
 .body-container{
     position: relative;
     display: flex;
-    top: 10rem;
+    top: 6rem;
 }
 
 .body-container > ul{
