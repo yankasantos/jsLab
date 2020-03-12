@@ -7,8 +7,11 @@ body{
     display: inline-block;
     position: relative;
     width: 70%;
-    left: 22rem;
+    left: 14rem;
     top: 6rem;
+}
+.foguete{
+    width: 10rem;
 }
 
 .button-input{
@@ -30,6 +33,7 @@ body{
     border: 1px solid #D0DBCA;
     padding: 0.5rem;
     color: #27CC5B;
+    outline: none;
 }
 .body-container{
     position: relative;
