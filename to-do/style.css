@@ -10,6 +10,11 @@ body{
     left: 14rem;
     top: 6rem;
 }
+.arrow-previous > a > img{
+    width: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
 .foguete{
     width: 10rem;
 }
