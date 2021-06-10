@@ -1,4 +1,4 @@
-var endereco = {
+const endereco = {
     rua: "Rua dos pinheiros",
     numero: 1293,
     bairro: "Centro",
@@ -10,9 +10,9 @@ function informacaoDev(endereco) {
     console.log("O usuário mora em "+ endereco.cidade + "/"+ endereco.uf+" , no bairro"+ endereco.bairro+", na rua " +  endereco.rua +" com nº "+endereco.numero+".")
 }
 
-var quantidadeQuestoes = 10;
-var quantidadeErros = 6; 
-var quantidadeAcertos = quantidadeQuestoes - quantidadeErros;
+const quantidadeQuestoes = 10;
+const quantidadeErros = 6; 
+const quantidadeAcertos = quantidadeQuestoes - quantidadeErros;
 
 function notaFinal(){
     console.log("Nota final " + quantidadeAcertos);
@@ -35,7 +35,7 @@ function retornaGenero(genero){
     }
 }            
 
-var generoInformado = retornaGenero('NB');
+const generoInformado = retornaGenero('NB');
 console.log(retornaGenero);
 
 function identidadeGenero(idGenero){
@@ -55,9 +55,9 @@ function identidadeGenero(idGenero){
     }
 }
 
-var identidadeGeneroInformado = identidadeGenero('C');
+const identidadeGeneroInformado = identidadeGenero('C');
 
-var nome = 'Yanka', sobrenome = 'Santos', idade = 23;
+const nome = 'Yanka', sobrenome = 'Santos', idade = 23;
 
 function dadosPessoais(nome, sobrenome,idade){
     if(nome ==='Renato' && idade === 23){
@@ -75,15 +75,15 @@ function dadosPessoais(nome, sobrenome,idade){
 
 }
 
-var curso = 'Sistemas de Informação';
-var cursando = (curso === 'Sistemas de Informação') ? 'Área de TI' : 'Outra área';
+const curso = 'Sistemas de Informação';
+const cursando = (curso === 'Sistemas de Informação') ? 'Área de TI' : 'Outra área';
 console.log(cursando);
 
-for(var index = 0; index <= 100; index ++){
+for(let index = 0; index <= 100; index ++){
     console.log('O index está na posição ' + index);
 }
 
-var ponteiro = 2020;
+const ponteiro = 2020;
 while(ponteiro >10){
     console.log(ponteiro + ' o ponteiro é divisível por 5');
     ponteiro/=5;
