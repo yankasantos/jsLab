@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    background-color: #060505;
 }
 
 .head{
@@ -14,13 +15,15 @@ body{
     width: 2rem;
     margin-left: 2rem;
     margin-top: 2rem;
+    color:#FFB229;
 }
 .foguete{
     width: 10rem;
+    color: #FFB229;
 }
 
 .button-input{
-    background-color: #27CC5B;
+    background-color: #FFB229;
     margin: 0 auto;
     width: 15%;
     border: none;
@@ -37,7 +40,7 @@ body{
     border-radius: 2rem;
     border: 1px solid #D0DBCA;
     padding: 0.5rem;
-    color: #27CC5B;
+    color: #FFB229;
     outline: none;
 }
 .body-container{
@@ -61,7 +64,8 @@ body{
     border-radius: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    color: #30FF72;
+    color: #FFB229;
+    font-weight: bold;
 }
 .body-container> ul > li > img {
     width: 1.5rem;

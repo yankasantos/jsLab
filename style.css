@@ -16,7 +16,7 @@
 
 body{
     margin: 0px;
-    background-color: #DCE8D5;
+    background-color: #060505;
 }
 #app{
     width: 100%;
@@ -26,19 +26,19 @@ body{
     width: 18rem;
     display: flex;
     position: relative;
-    left: 20%;
+    /* left: 50%; */
     top: 10rem;
 }
 #app a{
-    background-color: #30FF72;
-    height: 2rem;
+    background-color: #FFB229;
+    height: 0.5rem;
     width: 28%;
     border: none;
     color: #f0ffff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     position: relative;
-    left: 40rem;
+    left: 50%;
     border-radius: 2rem;
     padding: 2.35rem;
     text-align: center;
@@ -47,7 +47,8 @@ body{
     text-decoration: none;
 }
 #app a:hover{
-    background-color: #27CC5B;
+    background-color: #060505;
+    border: 1px solid #FFB229;
 }
 #app .footer{
     position: absolute;
